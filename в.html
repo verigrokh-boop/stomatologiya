@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Стоматология Улыбка</title>
+    <link rel="stylesheet" href="в.css">
+</head>
+<body>
+<div class="header">
+    <h1>🦷 Стоматология "Улыбка"</h1>
+    <div class="nav">
+        <a href="#servicesBlock">Услуги</a>
+        <a href="#doctorsBlock">Врачи</a>
+        <a href="#priceBlock">Цены</a>
+        <a href="#formBlock">Запись</a>
+    </div>
+</div>
+<div class="h">
+    <h2>Здоровые зубы — красивая улыбка!</h2>
+    <p>Современное оборудование, опытные врачи, доступные цены</p>
+    <a href="#formBlock" class="b">Записаться онлайн</a>
+</div>
+<div id="servicesBlock" class="block">
+    <h2>Наши услуги</h2>
+    <div id="servicesContainer" class="services-box"></div>
+</div>
+<div id="doctorsBlock" class="block">
+    <h2>Наши врачи</h2>
+    <div id="doctorsContainer" class="doctors-box"></div>
+</div>
+<div id="priceBlock" class="block">
+    <h2>Прайс-лист</h2>
+    <table class="price-table">
+        <thead>
+            <tr><th>Услуга</th><th>Цена (₽)</th></tr>
+        </thead>
+        <tbody id="priceTable"></tbody>
+    </table>
+</div>
+<div id="formBlock" class="block">
+    <h2>Записаться на приём</h2>
+    <div class="form-box">
+    <form id="appointmentForm">
+        <p>Ваше имя</p>
+        <input type="text" id="name">
+        <p>Ваш номер телефона</p>
+        <input type="tel" id="phone">
+        <p>Услуга</p>
+        <select id="serviceSelect"></select>
+        <p>Дата</p>
+        <input type="date" id="date">
+        <button type="button" onclick="sps()">Отправить</button>
+        <p id="formMessage"></p>
+    </form>
+</div>
+</div>
+<div class="footer">
+    <p>© 2025 Стоматология "Улыбка". г. Москва, ул. Цветочная, д. 10</p>
+    <p>Телефон: +7 (495) 123-45-67</p>
+</div>
+
+<script src="в.js"></script>
+</body>
+</html>
