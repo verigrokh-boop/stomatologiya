@@ -13,21 +13,30 @@
         <a href="#doctorsBlock">Врачи</a>
         <a href="#priceBlock">Цены</a>
         <a href="#formBlock">Запись</a>
+        <a href="#faqBlock">Вопросы</a>
     </div>
 </div>
 <div class="h">
-    <h2>Здоровые зубы — красивая улыбка!</h2>
+    <h2 id="heroTitle" class="animated-title">Здоровые зубы — красивая улыбка!</h2>
     <p>Современное оборудование, опытные врачи, доступные цены</p>
     <a href="#formBlock" class="b">Записаться онлайн</a>
+    <br>
+    <button id="visionModeBtn" class="vision-btn">👁️ Версия для слабовидящих</button>
 </div>
+
 <div id="servicesBlock" class="block">
     <h2>Наши услуги</h2>
     <div id="servicesContainer" class="services-box"></div>
 </div>
+
 <div id="doctorsBlock" class="block">
     <h2>Наши врачи</h2>
+    <div style="text-align: center;">
+        <button id="sortDoctorsBtn" class="sort-btn">⭐ Сортировать по стажу (сначала опытные)</button>
+    </div>
     <div id="doctorsContainer" class="doctors-box"></div>
 </div>
+
 <div id="priceBlock" class="block">
     <h2>Прайс-лист</h2>
     <table class="price-table">
@@ -37,26 +46,86 @@
         <tbody id="priceTable"></tbody>
     </table>
 </div>
+
 <div id="formBlock" class="block">
     <h2>Записаться на приём</h2>
     <div class="form-box">
-    <form id="appointmentForm">
-        <p>Ваше имя</p>
-        <input type="text" id="name">
-        <p>Ваш номер телефона</p>
-        <input type="tel" id="phone">
-        <p>Услуга</p>
-        <select id="serviceSelect"></select>
-        <p>Дата</p>
-        <input type="date" id="date">
-        <button type="button" onclick="sps()">Отправить</button>
-        <p id="formMessage"></p>
-    </form>
+        <form id="appointmentForm">
+            <p>Ваше имя</p>
+            <input type="text" id="name">
+            <p>Ваш номер телефона</p>
+            <input type="tel" id="phone">
+            <p>Услуга</p>
+            <select id="serviceSelect"></select>
+            <p>Дата</p>
+            <input type="date" id="date">
+            <button type="button" id="submitBtn">Отправить</button>
+            <p id="formMessage"></p>
+        </form>
+    </div>
 </div>
+<div id="faqBlock" class="block">
+    <h2>❓ Часто задаваемые вопросы</h2>
+    <div class="accordion" id="accordion">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <h3>Больно ли лечить зубы?</h3>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <p>Мы используем современную анестезию, поэтому лечение проходит совершенно безболезненно. Вы ничего не почувствуете!</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <h3>Как часто нужно посещать стоматолога?</h3>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <p>Рекомендуется посещать стоматолога раз в 6 месяцев для профилактического осмотра и профессиональной чистки.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <h3>Принимаете ли вы по ДМС?</h3>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <p>Да, мы работаем с большинством страховых компаний. Уточните подробности по телефону.</p>
+            </div>
+        </div>
+    </div>
 </div>
+<div class="block">
+    <div class="progress-card">
+        <h3>💰 Накопительная скидка</h3>
+        <p>Чем чаще вы к нам приходите, тем больше ваша скидка!</p>
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill">0%</div>
+            </div>
+            <div class="progress-controls">
+                <button id="progressUp" class="btn">+10% (добавить визит)</button>
+                <button id="progressDown" class="btn">-10% (сбросить)</button>
+            </div>
+        </div>
+        <p id="discountText">Текущая скидка: 0%</p>
+        <p style="font-size: 14px; color: gray;">* Скидка применяется при каждом 3-м визите и выше</p>
+    </div>
+</div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>🦷 Спасибо за доверие!</h2>
+        <p>Ваша заявка принята. Наш администратор свяжется с вами в ближайшее время для подтверждения записи.</p>
+        <p style="color: #0066cc; font-weight: bold;">Стоматология "Улыбка" — бережём вашу улыбку!</p>
+    </div>
+</div>
+
 <div class="footer">
-    <p>© 2025 Стоматология "Улыбка". г. Москва, ул. Цветочная, д. 10</p>
+    <p>© 2025 Стоматология "Улыбка". г. Нижний Новгород, ул. Цветочная, д. 10</p>
     <p>Телефон: +7 (495) 123-45-67</p>
+    
 </div>
 
 <script src="в.js"></script>
